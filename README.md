@@ -2,7 +2,7 @@
 
 *Execute periodic stuff inside a user session.*
 
-Normally you would use cron, but this script is intended to only execute stuff as long as the user session is alive. It inhirits the session logon keys so ext4 encryption does not get in the way (a nasty problem with cron).
+Normally you would use cron, but this script is intended to only execute stuff as long as the user session is alive. It inhirits the session logon keys so ext4 encryption does not get in the way (a nasty problem with cron). Also see: https://github.com/neithernut/pam_e4crypt/issues/31
 
 The commands to execute are stored in a tab seperated values file (tsv) called `session.tsv`. Format:
 
